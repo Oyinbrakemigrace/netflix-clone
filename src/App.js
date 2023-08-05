@@ -1,7 +1,9 @@
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-center">
+      <HomePage />
     </div>
   );
 }
