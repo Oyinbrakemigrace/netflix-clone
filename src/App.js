@@ -2,7 +2,7 @@ import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <div className="text-center">
+    <div>
       <HomePage />
     </div>
   );

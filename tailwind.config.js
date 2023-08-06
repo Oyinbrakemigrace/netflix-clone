@@ -6,6 +6,9 @@ module.exports = {
     backgroundImage:{
       'banner': 'url("assets/images/banner.webp")'
     },
+    backgroundColor:{
+      'btn-bg': 'rgba(51,51,51,0.5)'
+    }
   },
   plugins: [],
 };
