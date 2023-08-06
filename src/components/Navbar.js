@@ -36,57 +36,6 @@ const Navbar = () => {
             className="w-[30px] h-[30px] fixed right-5 cursor-pointer"
           />
         </div>
-        <h1>peep</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
-        <h1>join</h1>
       </div>
     </>
   );
