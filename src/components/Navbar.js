@@ -22,7 +22,7 @@ const Navbar = () => {
       <div>
         <div
           className={`flex flex-row justify-between bg-[#111] fixed top-0 w-full p-10 z-[1] ${
-            show && "transition-all duration-500 ease-in bg-transparent"
+            !show && "transition-all duration-500 ease-in bg-transparent"
           }`}
         >
           <img
