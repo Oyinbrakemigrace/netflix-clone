@@ -1,11 +1,9 @@
 import React from "react";
 
 const Banner = () => {
-  const descriptionEllipsis = (string, numberOfString) => {
-    return string?.length > numberOfString
-      ? string.substr(0, numberOfString - 1) + "..."
-      : string; //it takes a substring from 0 to numberOfString - 1 and appends ... in place of the rest of the string.
-  };
+ const descriptionEllipsis = (string, n)=>{
+    return string?.length > 100 ? string.substr(0, n-1)+ '...': string
+ }
 
   return (
     <header className="bg-banner bg-cover bg-center h-[448px] relative text-white object-contain">

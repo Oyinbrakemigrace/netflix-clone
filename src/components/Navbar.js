@@ -28,12 +28,12 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="fixed left-0 w-[10%] h-[5%] pl-5 cursor-pointer"
+            className="fixed top-7 left-0 w-[10%] h-[5%] pl-5 cursor-pointer"
           />
           <img
             src={avatar}
             alt=""
-            className="w-[30px] h-[30px] fixed right-5 cursor-pointer"
+            className="w-[30px] h-[30px] fixed right-5 top-7 cursor-pointer"
           />
         </div>
       </div>
