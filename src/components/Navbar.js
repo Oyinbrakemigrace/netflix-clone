@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../assets/images/Logonetflix.png'
 import avatar from '../assets/images/Netflix-avatar.png'
-const Navbar = () => {
+function Navbar(){
   const [show, setShow]= useState(false)
 
   const handleTransition = ()=>{
@@ -21,8 +21,8 @@ const Navbar = () => {
     <>
       <div>
         <div
-          className={`flex flex-row justify-between bg-[#111] fixed top-0 w-full p-10 z-[1] ${
-            !show && "transition-all duration-500 ease-in bg-transparent"
+          className={`flex flex-row justify-between bg-[#111] fixed top-0 w-full p-8 z-[1] ${
+            !show ? "transition-all duration-500 ease-in bg-opacity-0" : ""
           }`}
         >
           <img

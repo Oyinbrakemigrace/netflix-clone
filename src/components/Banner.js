@@ -1,14 +1,38 @@
-import React from "react";
+import requests from "./Request";
+import axios from "./axios";
+import React, { useEffect, useState } from "react";
 
-const Banner = () => {
+function Banner(){
+
+  const [movie, setMovie] = useState([])
+
+useEffect(()=>{
+  async function fetcMovie(){
+    const request = await axios.get(requests.fetchNetflixOriginals)
+    setMovie(
+      request.data.results[Math.floor(Math.random()*request.data.results.length-1)]
+    )
+    return request
+  }
+  fetcMovie()
+}, [])
+  console.log(movie)
+
  const descriptionEllipsis = (string, n)=>{
     return string?.length > 100 ? string.substr(0, n-1)+ '...': string
  }
 
   return (
-    <header className="bg-banner bg-cover bg-center h-[448px] relative text-white object-contain">
+    <header
+      className="h-[450px] relative text-white object-contain"
+      style={{
+        backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+      }}
+    >
       <div className="ml-[30px] pt-[140px]">
-        <h1 className="text-[48px] font-extrabold pb-3">Movie Name</h1>
+        <h1 className="text-[48px] font-extrabold pb-3">{movie?.name}</h1>
         <div>
           <button className="cursor-pointer text-white outline-none border-none font-bold rounded-sm pl-8 pr-8 mr-4 pt-2 pb-2 bg-btn-bg hover:bg-[#e6e6e6] hover:text-black hover:transition-all duration-300">
             Play
@@ -18,13 +42,7 @@ const Banner = () => {
           </button>
         </div>
         <h1 className="w-[720px] pt-[16px] text-[15px] max-w-[360px] h-[80px]">
-          {descriptionEllipsis(
-            `This is a movie description Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Consequuntur veniam unde deleniti soluta quo, a non
-          incidunt obcaecati qui deleniti earum, voluptas non possimus aliquam
-          velit totam!`,
-            100
-          )}
+          {descriptionEllipsis(`${movie?.overview}`,200)}
         </h1>
       </div>
       <div />
@@ -39,3 +57,4 @@ export default Banner;
 
 //string?.length checks if the string parameter is not null or
 //undefined and then accesses its length property.
+
