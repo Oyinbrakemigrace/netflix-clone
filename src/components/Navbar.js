@@ -28,7 +28,7 @@ function Navbar(){
           <img
             src={logo}
             alt="logo"
-            className="fixed top-7 left-0 w-[10%] h-[5%] pl-5 cursor-pointer"
+            className="fixed top-7 left-0 md:w-[10%] h-[5%] pl-5 cursor-pointer"
           />
           <img
             src={avatar}
