@@ -24,7 +24,7 @@ function Banner() {
   };
 
   return (
-    <div className="bg-[#111]">
+    <div className="bg-[#111] h-[100%]">
       <header
         className="h-[450px] w-full p-[-10] relative text-white object-contain"
         style={{
