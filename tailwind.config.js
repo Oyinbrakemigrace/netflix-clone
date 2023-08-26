@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     backgroundColor: {
-      "btn-bg": "rgba(51,51,51,0.5)",
+      "btn-bg": "rgba(51,51,51,0.8)",
     },
   },
   plugins: [],
