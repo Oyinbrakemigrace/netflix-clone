@@ -32,7 +32,7 @@ function Banner() {
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat : 'no-repeat',
-          padding:"50px"
+          
         }}
       >
         <div className="ml-[30px] pt-[140px]">
