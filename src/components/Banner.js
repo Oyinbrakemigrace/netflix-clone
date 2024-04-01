@@ -26,19 +26,20 @@ function Banner() {
   return (
     <div className="bg-[#111] h-[100%]">
       <header
-        className="h-[450px] w-full p-[-10] relative text-white object-contain"
+        className="h-[450px]  w-full relative text-white object-contain"
         style={{
           backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
-          backgroundRepeat : 'no-repeat'
+          backgroundRepeat : 'no-repeat',
+          padding:"50px"
         }}
       >
         <div className="ml-[30px] pt-[140px]">
-          <h1 className="text-[48px] font-extrabold pb-3">
+          <h1 className="lg:text-[48px] text-[30px] font-extrabold pb-3">
             {movie?.name || movie?.title || movie?.original_name}
           </h1>
-          <div>
+          <div className="lg:mt-0 mt-5">
             <button className="cursor-pointer text-white outline-none border-none font-bold rounded-sm pl-8 pr-8 mr-4 pt-2 pb-2 bg-btn-bg hover:bg-[#e6e6e6] hover:text-black hover:transition-all duration-300">
               Play
             </button>

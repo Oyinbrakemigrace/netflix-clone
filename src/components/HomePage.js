@@ -16,7 +16,7 @@ function HomePage(){
       <Row genre="Action Movies" fetchUrl={requests.fetchActionMovies} />
       <Row genre="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row genre="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
-      <Row genre="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      {/* <Row genre="Documentaries" fetchUrl={requests.fetchDocumentaries} /> */}
     </div>
   );
 }

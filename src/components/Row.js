@@ -20,8 +20,8 @@ function Row({ genre, fetchUrl, isLargeRow = false }){
     <div className="bg-[#111]">
       <div className=" text-white ml-5">
         <h2 className="text-xl font-semibold">{genre}</h2>
-        <div className="flex flex-row overflow-x-scroll overflow-y-hidden p-3">
-          {movies.map((movie) => (
+        <div className="flex flex-row overflow-x-scroll overflow-y-hidden scroll-container p-3">
+          {movies?.map((movie) => (
             <img
               className={`max-h-24 object-contain mr-4 transform hover:scale-110 transition-transform duration-500 ${
                 isLargeRow && "max-h-[200px]"
